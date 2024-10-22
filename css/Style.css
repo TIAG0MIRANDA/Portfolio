@@ -195,7 +195,7 @@ main {
 
 /* Estilizando a seção "projetos" */
 #Projects {
-    height: 450px;
+    height: 1250px;
     border-radius: 40px;
     margin: 140px 50px 40px 80px;
     box-shadow: 2px 2px 12px black;
@@ -208,6 +208,64 @@ main {
     text-align: center;
     letter-spacing: 4px;
     text-shadow: 2px 2px 4px #00f2ff;
+}
+.caixa-projeto {
+    width: auto;
+    height: 430px;
+    border-radius: 10px;
+    margin: 15px 50px 40px 50px;
+    box-shadow: 2px 2px 12px black;
+    background-color: rgb(255, 255, 255);
+}
+
+.imagep1 {
+    float: left;
+    width: 500px;
+    margin: 40px;
+    height: 350px;
+    border-radius: 40px;
+
+}
+
+.descricao {
+    float: right;
+    width: 635px;
+    margin: 40px 40px 40px 0px;
+    text-align: justify;
+}
+
+.descricao > h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.descricao > h2 {
+    margin-top: 20px;
+}
+
+.imagep2 {
+    height: 350px;
+    width: 500px;
+    float: right;
+    margin: 40px;
+    border-radius: 40px;
+
+}
+
+.descricao2 {
+    float: left;
+    margin: 40px 0px 40px 40px;
+    width: 635px;
+    text-align: justify;
+}
+
+.descricao2 > h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.descricao2 > h2 {
+    margin-top: 20px;
 }
 
 #linha {
@@ -243,4 +301,9 @@ main {
     text-align: center;
     letter-spacing: 4px;
     text-shadow: 2px 2px 4px #00f2ff;
+}
+
+::-webkit-scrollbar {
+    width: 0; /* Largura da scrollbar */
+    background: transparent; /* Fundo da scrollbar */
 }
