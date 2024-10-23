@@ -12,7 +12,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 150px;
+    scroll-padding-top: 200px;
 }
 
 /*--------------------------------- Header Section ---------------------------------*/
@@ -167,16 +167,7 @@ main {
     border-radius: 40px;
 }
 
-/* Estilizando a seção "Sobre Mim" */
-#About {
-    height: 490px;
-    border-radius: 40px;
-    margin: 40px 50px 40px 80px;
-    box-shadow: 2px 2px 12px black;
-}
-
-#About-title {
-    padding: 40px;
+.title {
     font-size: 32px;
     color: #00f2ff;
     text-align: center;
@@ -185,7 +176,7 @@ main {
 }
 
 #description-about {
-    padding: 0 50px;
+    padding: 50px 0px 0px 0px;
     font-size: 16px;
     letter-spacing: 1px;
     text-align: justify;
@@ -193,16 +184,16 @@ main {
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
-/* Estilizando a seção "projetos" */
-#Projects {
-    height: 1250px;
+.sacola {
+    height: auto;
     border-radius: 40px;
     margin: 140px 50px 40px 80px;
     box-shadow: 2px 2px 12px black;
+    padding: 50px;
 }
 
 #Projects-title {
-    padding: 40px;
+    padding: 0px 0px 40px 0px;
     font-size: 32px;
     color: #00f2ff;
     text-align: center;
@@ -213,7 +204,7 @@ main {
     width: auto;
     height: 430px;
     border-radius: 10px;
-    margin: 15px 50px 40px 50px;
+    margin: 50px 0px 0px 0px;
     box-shadow: 2px 2px 12px black;
     background-color: rgb(255, 255, 255);
 }
@@ -227,7 +218,7 @@ main {
 
 }
 
-.descricao {
+.descricao {  /* TODO: mudar nome da class */
     float: right;
     width: 635px;
     margin: 40px 40px 40px 0px;
@@ -274,33 +265,6 @@ main {
     margin: 0 475px;
     background-color: white;
     box-shadow: 2px 2px 4px white;
-}
-
-#habilidades-title {
-    padding: 40px;
-    font-size: 32px;
-    color: #00f2ff;
-    text-align: center;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 4px #00f2ff;
-}
-
-
-/* Estilizando a seção "projetos" */
-#Contact {
-    height: 450px;
-    border-radius: 40px;
-    margin: 140px 50px 40px 80px;
-    box-shadow: 2px 2px 12px black;
-}
-
-#Contact-title {
-    padding: 40px;
-    font-size: 32px;
-    color: #00f2ff;
-    text-align: center;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 4px #00f2ff;
 }
 
 ::-webkit-scrollbar {
