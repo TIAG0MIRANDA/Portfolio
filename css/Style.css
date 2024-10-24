@@ -15,6 +15,11 @@ html {
     scroll-padding-top: 200px;
 }
 
+::-webkit-scrollbar {
+    width: 0; /* Largura da scrollbar */
+    background: transparent; /* Fundo da scrollbar */
+}
+
 /*--------------------------------- Header Section ---------------------------------*/
 /* Estilizando o header */
 header { 
@@ -152,6 +157,10 @@ main {
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
+strong{
+    text-shadow: 2px 2px 4px #00f2ff;
+}
+
 /* Estilo para a imagem do avatar */
 .avatar {
     width: 30%; /* Ajuste o tamanho da imagem conforme necessário */
@@ -172,7 +181,6 @@ main {
     color: #00f2ff;
     text-align: center;
     letter-spacing: 4px;
-    text-shadow: 2px 2px 4px #00f2ff;
 }
 
 #description-about {
@@ -192,14 +200,72 @@ main {
     padding: 50px;
 }
 
-#Projects-title {
-    padding: 0px 0px 40px 0px;
-    font-size: 32px;
-    color: #00f2ff;
-    text-align: center;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 4px #00f2ff;
+#skiils {
+    margin-top: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    letter-spacing: 1px;
 }
+
+span {
+    color: white;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+.skills {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Tooltip container */
+.tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    margin-left: -150px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-top: 20px;
+}
+
+.tooltiptext::after {
+    position: absolute;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+/* Mostrar o tooltip quando o mouse estiver sobre o elemento */
+.skills:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.skills:hover {
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px black;
+    padding: 10px;
+}
+
+#skiils > img {
+    margin: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around; /* Ajusta o espaçamento entre os itens */
+    align-items: center; /* Centraliza verticalmente */
+}
+
 .caixa-projeto {
     width: auto;
     height: 430px;
@@ -215,7 +281,6 @@ main {
     margin: 40px;
     height: 350px;
     border-radius: 40px;
-
 }
 
 .descricao {  /* TODO: mudar nome da class */
@@ -259,15 +324,3 @@ main {
     margin-top: 20px;
 }
 
-#linha {
-    height: 2px;
-    width: 400px;
-    margin: 0 475px;
-    background-color: white;
-    box-shadow: 2px 2px 4px white;
-}
-
-::-webkit-scrollbar {
-    width: 0; /* Largura da scrollbar */
-    background: transparent; /* Fundo da scrollbar */
-}
