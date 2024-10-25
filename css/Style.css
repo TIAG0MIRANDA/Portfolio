@@ -34,7 +34,7 @@ header {
 
 /* Estilizando navegação */
 #nav-bar {
-    height: 100%; /* Ajustado para 100% da altura do header */
+    height: 100%; 
     display: flex;
     align-items: center;
     justify-content: space-around;
