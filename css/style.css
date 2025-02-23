@@ -281,19 +281,23 @@ span {
     background-color: rgb(255, 255, 255);
 }
 
+.grid-container {
+    display: grid;
+}
+
 .imagep1 {
     float: left;
     width: 500px;
     margin: 40px;
     height: 350px;
-    border-radius: 40px;
+    border: solid 1px;
 }
 
 .descricao {
     /* TODO: mudar nome da class */
     float: right;
-    width: 635px;
-    margin: 40px 40px 40px 0px;
+    width: auto;
+    margin: 40px 40px 0px 0px;
     text-align: justify;
 }
 
@@ -304,27 +308,33 @@ span {
 
 .descricao>h2 {
     margin-top: 20px;
+
+}
+
+.grid-container2 {
+    display: grid;
+    width: 40%;
 }
 
 .imagep2 {
-    height: 350px;
-    width: 500px;
-    float: right;
-    margin: 40px;
-    border-radius: 40px;
-
-}
-
-.descricao2 {
     float: left;
-    margin: 40px 0px 40px 40px;
-    width: 635px;
-    text-align: justify;
+    width: 500px;
+    margin: 40px;
+    height: 350px;
+    border: solid 1px;
 }
 
 .descricao2>h1 {
     margin-bottom: 20px;
     text-align: center;
+}
+
+.descricao2 {
+    float: left;
+    margin: 40px 21px 40px 40px;
+    width: auto;
+    max-width: 45%;
+    text-align: justify;
 }
 
 .descricao2>h2 {
